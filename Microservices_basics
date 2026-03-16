@@ -1,1 +1,31 @@
+Before diving into microservcies lets talk about earlier approach which was the monolith.
+
+In an era ago all the applications used to be deployed as a single unit where all funcationality deployed together inside a single server, we call this approach as monolithic,
+it had its pros and cons
+pros - simper development and deployment for smaller teams and applications, fewer cross cutting concerns, better performance,etc.
+cons - difficult to adpot new technologies,limited agility, single code base and difficult to maintain,no fault tolerance etc.
+
+we have various forms of monolithic with names like single-process monolith,modular monolith,distributed monolith.
+
+In a monolithic approach,developers work with a single code base,which is then packaged as a unified unit, such as an WAR/JAR file, and deployed onto a server which is supported by a single database.
+
+This then is updated to The SOA(Service-Oriented Architecture)
+-This approach was introducted to tackle challenbges of large, monolithic applications,its an architectural style that focuses on organizing softeare systems as a collection of loosely coupled, 
+interoperable servieces it provides a way to design and develop large scale applications by decomposing them into smaller modular servies which can be independently developed, deployed and managed.
+
+This eliminated the tight coupling of UI and Backend.
+pros - resuability,better maintainability,high reliability,parallel development.
+cons - complex management due to communication protocols ex SOAP, high investment costs due to vendor in middleware ex ESB, extra overload.
+
+Which puts us in current state Microservices:-
+Microservices are independently releasable services that are modeled around a business domain. A services encapsulates functionality and makes it accessible to other services via networks-you construct a more complex system from these building blocks,one microservices might represent.
+Accounts,another Cards and other loans etc, but toger they might constitute an entire bank system.
+
+pros - easy to develop,test and deploy,increased agility,ability to sclae horizontally,parallel development, modeled around a business domain
+cons - complexity,infrastructure overhead,security concerns.
+
+Define microservice
+-> Microservices is an approach to developing a single application as a suite of small services,each running in its own process and communicating with lightweight mechanisms, built around bussiness copabilities and independently deployable by fully automated deployment machinery.
+
+
 
